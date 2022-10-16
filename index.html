@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizTions - Homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+
+        <form class="login-form" method="POST" action="#">
+            <div class="logo-brand">
+                <img src="images/logo-chat.png" alt="Logo" width="300" height="162">
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <em data-feather="user"></em>
+                    <input type="text" name="username" class="form-control" placeholder="Username...">
+                </div>
+                <div class="input-group">
+                    <em data-feather="lock"></em>
+                    <input type="password" name="password" class="form-control" placeholder="Password...">
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-accent btn-login">Login</button>
+
+                <div class="or-divider">
+                    <div class="line"></div>
+                    <span>or</span>
+                    <div class="line"></div>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-register">Register</button>
+            </div>
+        </form>
+
+        <div id="elements"></div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

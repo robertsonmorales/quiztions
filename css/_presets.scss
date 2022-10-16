@@ -1,0 +1,26 @@
+.btn{
+    box-shadow: $shadow;
+    border-radius: $radius;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+
+    &:active{
+        box-shadow: $shadow__focus;
+    }
+}
+
+.btn-primary{
+    background-color: $primary;
+    color: $dark
+}
+
+.btn-accent{
+    background-color: $accent;
+    color: $dark;
+}
+
+.w-100{
+    width: 100%;
+}
