@@ -1,12 +1,16 @@
-$primary: #9656F6;
+$primary: #a076df; //9656F6;
 $accent: #34D49D;
 $dark: #123;
 $light: #F4F5FE;
+$white: #fff;
 $muted: #666666;
+$light-muted: #ddd;
+$disabled: #BEC4FC;
 
 $font-family: 'Inter', sans-serif;
 
 $radius: 10px;
+$circle-radius: 100%;
 
 $shadow: 8px 10px 2px rgba(0, 0, 0, 0.25);
 $shadow__focus: 3px 5px 2px rgba(0, 0, 0, 0.25);

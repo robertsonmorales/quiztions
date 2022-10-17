@@ -1,7 +1,6 @@
 @import "normalize";
 @import "variables";
 @import "mixins";
-@import "presets";
 
 html{
     scroll-behavior: smooth;
@@ -13,13 +12,15 @@ body{
     color: $dark;
 }
 
+@import "presets";
+
 #app{
     background: linear-gradient(217.46deg, #091370 13.81%, #1B1136 86.38%);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     @include flexbox(center, center);
-    overflow-y: hidden;
+    overflow-y: auto;
 
     #elements{
         background: url("../images/elements.png");
@@ -31,13 +32,86 @@ body{
     }
 }
 
+.input-group{
+    position: relative;
+    @include flexbox(center, flex-start);
+    width: 100%;
+
+    .feather{
+        width: 22px;
+        height: 22px;
+        color: $muted;
+        position: absolute;
+        left: 12px;
+    }
+
+    .form-control{
+        background-color: $light;
+        border-radius: $radius;
+        height: 54px;
+        padding: 0 12px;
+        padding-left: 40px;
+        font-weight: 500;
+        border: 1px solid $muted;
+        outline: none;
+        box-shadow: $shadow;
+        @include flexbox(center, flex-start);
+        gap: 12px;
+        width: 100%;
+        transition: all .2s ease;
+
+        &:focus{
+            box-shadow: $shadow__focus;
+        }
+    }
+
+    .no-icon{
+        padding-left: 12px;
+    }
+
+    &:focus-within{
+        position: relative;
+        top: 2px;
+    }
+}
+
+.or-divider{
+    color: $light;
+    @include flexbox(center, center);
+}
+
+.mode-wrapper{
+    @include flexbox(center, center);
+    flex-direction: column;
+    gap: 0px;
+
+    .title{
+        margin: 0;
+        color: $white;
+
+        .highlight{
+            position: relative;
+
+            &::after{
+                content: url("../images/curve.svg");
+                position: absolute;
+                right: -30px;
+                top: 20px;
+            }
+        }
+    }
+
+    .desc{
+        color: $disabled;
+    }
+}
+
 .login-form{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0px;
-    gap: 40px;
-    flex: .35;
+    gap: 24px;
+    flex: .27;
 
     .logo-brand{
         flex: none;
@@ -53,46 +127,8 @@ body{
         flex-grow: 0;
         @include flexbox(center, center);
         flex-direction: column;
-        gap: 24px;
+        gap: 16px;
         width: 100%;
-
-        .input-group{
-            position: relative;
-            @include flexbox(center, flex-start);
-            width: 100%;
-
-            .feather{
-                width: 22px;
-                height: 22px;
-                color: $muted;
-                position: absolute;
-                left: 12px;
-            }
-
-            .form-control{
-                background-color: $light;
-                border-radius: $radius;
-                height: 54px;
-                padding: 0 12px;
-                padding-left: 40px;
-                border: 1px solid $muted;
-                outline: none;
-                box-shadow: $shadow;
-                @include flexbox(center, flex-start);
-                gap: 12px;
-                width: 100%;
-                transition: all .2s ease;
-
-                &:focus{
-                    box-shadow: $shadow__focus;
-                }
-            }
-
-            &:focus-within{
-                position: relative;
-                top: 2px;
-            }
-        }
     }
 
     .form-actions{
@@ -101,22 +137,52 @@ body{
         flex-grow: 0;
         @include flexbox(center, center);
         flex-direction: column;
-        gap: 24px;
+        gap: 16px;
         width: 100%;
-
-        .btn{
-            width: 100%;
-            text-align: center;
-            padding: 15px;
-            cursor: pointer;
-        }
 
         a.btn{
             text-decoration: none;
         }
+    }
+}
 
-        .or-divider{
-            color: $light;
+.welcome-state{
+    @include flexbox(center, center);
+    flex-direction: column;
+    gap: 24px;
+
+    .welcome-img{
+        width: 150px;
+        object-fit: cover;
+    }
+
+    .welcome-action{
+        a{
+            padding: 16px 40px;
         }
     }
+}
+
+.quiz-mode{
+    @include flexbox(stretch, flex-start);
+    flex-direction: column;
+    gap: 24px;
+    
+    .join-wrapper{
+        @include flexbox(stretch, flex-start);
+        gap: 8px;
+    }
+
+    .other-modes{
+        @include flexbox(center, flex-start);
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.container{
+    width: 90%;
+
+    @import "navbar";
+    @import "main";
 }

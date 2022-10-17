@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizTions - Register</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo-chat.png" type="image/png">
+</head>
+<body>
+    <div id="app">
+        <div class="sounds d-none">
+            <audio autoplay>
+                <source src="sounds/correct.mp3" type="audio/mp3">
+            </audio>
+    
+            <audio id="btn-click">
+                <source src="sounds/button.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+
+        <div class="welcome-state">
+            <img src="images/welcome.svg" class="welcome-img" alt="Welcome" width="150">
+
+            <div class="text-center">
+                <h1 class="leading-text text-light">Welcome, Anjo!</h1>
+                <p class="text-light">Thank you for registering</p>
+            </div>
+
+            <div class="welcome-action">
+                <a href="index.html" class="btn btn-accent" id="btn-login">Login</a>
+            </div>
+        </div>
+
+        <div id="elements"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

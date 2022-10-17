@@ -1,0 +1,38 @@
+nav.navbar{
+    @include flexbox(center, space-between);
+
+    .logo-brand{
+        text-align: left;
+    }
+
+    .user-options{
+        @include flexbox(center, flex-end);
+        gap: 24px;
+
+        #btn-join{
+            padding: 12px 20px;
+        }
+
+        .user-settings{
+            @include flexbox(center, flex-end);
+            gap: 16px;
+
+            .btn-settings{
+                background-color: transparent;
+                color: $disabled;
+                border: none;
+                outline: none;
+            }
+
+            .btn-profile{
+                width: 50px;
+                height: 50px;
+                border: 2px solid $primary;
+                outline: none;
+                border-radius: $circle-radius;
+                overflow: hidden;
+                @include flexbox(center, center);
+            }
+        }
+    }
+}

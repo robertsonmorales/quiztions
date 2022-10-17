@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizTions - Homepage</title>
+    <title>QuizTions - Register</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,48 +25,37 @@
                 <source src="sounds/button.mp3" type="audio/mp3">
             </audio>
         </div>
-
-        <form class="login-form" 
-            id="login" 
-            method="GET" 
-            action="choose-quiz.html">
-
+        
+        <form class="login-form" method="GET" action="welcome.html">
             <div class="logo-brand">
-                <img src="images/logo-chat.png" 
-                    alt="Logo" 
-                    width="200">
+                <img src="images/logo-chat.png" alt="Logo" width="300" height="162">
             </div>
-
             <div class="form-group">
                 <div class="input-group">
                     <em data-feather="user"></em>
-                    <input type="text" 
-                        name="username" 
-                        class="form-control" 
-                        placeholder="Username..." 
-                        autocomplete="off">
+                    <input type="text" name="name" class="form-control" placeholder="Name..." autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <em data-feather="user"></em>
+                    <input type="text" name="username" class="form-control" placeholder="Username..." autocomplete="off">
                 </div>
                 <div class="input-group">
                     <em data-feather="lock"></em>
-                    <input type="password" 
-                        name="password" 
-                        class="form-control" 
-                        placeholder="Password..." 
-                        autocomplete="off">
+                    <input type="password" name="password" class="form-control" placeholder="Password..." autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <em data-feather="lock"></em>
+                    <input type="password" name="re-enter-password" class="form-control" placeholder="Re-enter Password..." autocomplete="off">
                 </div>
             </div>
             <div class="form-actions">
-                <button type="submit" 
-                    class="btn btn-accent" 
-                    id="btn-login">Login</button>
+                <button type="submit" class="btn btn-accent" id="btn-register">Register</button>
 
                 <div class="or-divider">
                     <span>or</span>
                 </div>
 
-                <button type="button" 
-                    class="btn btn-primary" 
-                    id="btn-register">Register</button>
+                <button type="button" class="btn btn-primary" id="btn-login">Login</button>
             </div>
         </form>
 
