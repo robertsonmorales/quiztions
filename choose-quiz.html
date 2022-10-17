@@ -26,52 +26,34 @@
             </audio>
         </div>
 
-        <form class="login-form" 
-            id="login" 
-            method="GET" 
-            action="choose-quiz.html">
-
-            <div class="logo-brand">
-                <img src="images/logo-chat.png" 
-                    alt="Logo" 
-                    width="200">
+        <div class="quiz-mode">
+            <div class="mode-wrapper">
+                <h1 class="title">Choose <span class="highlight">Quiz</span> Mode</h1>
+                <p class="desc">Customize your QuizTions gameplay with friends</p>
             </div>
 
-            <div class="form-group">
+            <div class="join-wrapper">
                 <div class="input-group">
-                    <em data-feather="user"></em>
-                    <input type="text" 
-                        name="username" 
-                        class="form-control" 
-                        placeholder="Username..." 
-                        autocomplete="off">
+                    <input type="text" name="code" class="form-control no-icon" placeholder="Enter a join code..." maxlength="6">
                 </div>
-                <div class="input-group">
-                    <em data-feather="lock"></em>
-                    <input type="password" 
-                        name="password" 
-                        class="form-control" 
-                        placeholder="Password..." 
-                        autocomplete="off">
+                <div class="join-action">
+                    <button type="button" class="btn btn-primary">Join</button>
                 </div>
             </div>
-            <div class="form-actions">
-                <button type="submit" 
-                    class="btn btn-accent" 
-                    id="btn-login">Login</button>
 
-                <div class="or-divider">
-                    <span>or</span>
-                </div>
-
-                <button type="button" 
-                    class="btn btn-primary" 
-                    id="btn-register">Register</button>
+            <div class="or-divider">
+                <span>or</span>
             </div>
-        </form>
+
+            <div class="other-modes">
+                <button type="button"class="btn btn-accent">Single Player</button>
+                <button type="button"class="btn btn-primary">Player vs Player</button>
+            </div>
+
+        </div>
 
         <div id="elements"></div>
-    </div>
+    </div>  
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="javascript/script.js"></script>
