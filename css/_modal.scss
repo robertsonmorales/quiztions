@@ -1,0 +1,58 @@
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    @include flexbox(center, center);
+    display: none;
+
+    .modal-wrapper{
+        background-color: $secondary;
+        padding: 32px;
+        box-shadow: $shadow;
+        border-radius: $card-radius;
+        @include flexbox(center, flex-start);
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+
+        .btn-close{
+            background-color: transparent;
+            color: $disabled;
+            box-shadow: none;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 15%;
+
+            .feather{
+                width: 18px;
+                height: 18px;
+            }
+
+            &:active{
+                color: $active;
+            }
+        }
+
+        h2{
+            margin: 0;
+            margin-bottom: 16px;
+        }
+
+        .join-wrapper{
+            @include flexbox(center, center);
+            gap: 8px;
+        }
+
+        .invalid-feedback{
+            display: none;
+            background-color: $error;
+            color: $light;
+            border-radius: $radius;
+            padding: 8px 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+}
