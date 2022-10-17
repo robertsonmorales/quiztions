@@ -1,5 +1,100 @@
 .select-quiz{
     @include flexbox(center, flex-start);
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
+
+    .browse-by-subject{
+        @include flexbox(flex-start, flex-start);
+
+        .nav{
+            list-style: none;
+            @include flexbox(center, flex-start);
+            gap: 40px;
+            padding-left: 0;
+            border-bottom: 1px solid $disabled;
+
+            .nav-item{
+                padding-bottom: 20px;
+
+                .nav-link{
+                    text-decoration: none;
+                    color: $disabled;
+                    padding-bottom: 17px;
+                    transition: color .2s ease;
+
+                    &:hover{
+                        color: $light;
+                        border-bottom: 5px solid $primary;
+                    }
+
+                    &:active{
+                        color: $active;
+                    }
+                }
+
+                .active{
+                    color: $light;
+                    border-bottom: 5px solid $primary;
+                }
+            }
+        }
+
+        .panel{
+
+            .card-group{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 24px;
+                row-gap: 24px;
+
+                .card{
+                    background-color: $secondary;
+                    color: $light;
+                    padding: 20px;
+                    border-radius: $card-radius;
+                    box-shadow: $shadow;
+                    @include flexbox(center, flex-start);
+                    gap: 24px;
+                    cursor: pointer;
+                    transition: all .2s ease;
+                    border: none;
+                    outline: none;
+
+                    .card-img{
+                        img{
+                            border-radius: $radius;
+                        }
+                    }
+
+                    .card-body{
+                        text-align: left;
+                        @include flexbox(flex-start, center);
+                        flex-direction: column;
+
+                        h3{
+                            font-weight: 500;
+                        }
+
+                        .badge{
+                            background-color: $active;
+                            @include flexbox(center, center);
+                            gap: 8px;
+                            padding: 8px 12px;
+                            border-radius: 50px;
+                        }
+                    }
+
+                    &:hover{
+                        opacity: .9;
+                    }
+
+                    &:active{
+                        box-shadow: $shadow__focus;
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+            }
+        }
+    }
 }

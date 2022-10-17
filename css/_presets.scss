@@ -31,6 +31,11 @@
 .btn-primary{
     background-color: $primary;
     color: $dark;
+
+    &:active{
+        background-color: $active;
+        color: $disabled;
+    }
 }
 
 .btn-accent{
