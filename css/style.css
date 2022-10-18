@@ -515,11 +515,16 @@ body {
   opacity: .9;
 }
 
-.card:active {
+button.card:active {
   -webkit-box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.25);
   position: relative;
   top: 2px;
+}
+
+.text-muted {
+  color: #BEC4FC;
+  font-weight: 600;
 }
 
 #app {
@@ -913,6 +918,41 @@ body {
   background-color: transparent;
 }
 
+.container nav.navbar .quiz-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+}
+
+.container nav.navbar .quiz-options .v-divider {
+  border: 1px solid #BEC4FC;
+  height: 25px;
+}
+
+.container nav.navbar .quiz-options button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container nav.navbar .quiz-options button .feather {
+  width: 20px;
+  height: 20px;
+}
+
 .container .select-quiz {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,6 +1073,119 @@ body {
 
 .container .preview-subject .divider {
   border: 1px solid #3C3072;
+}
+
+.container .questions {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 56px;
+}
+
+.container .questions h1.q {
+  font-weight: 700;
+  color: #fff;
+}
+
+.container .questions .choices {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+}
+
+.container .questions .choices .answer-card {
+  padding: 20px;
+  border-radius: 10px;
+  color: #F4F5FE;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.container .questions .choices .answer-card .answer-letter {
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #F4F5FE;
+}
+
+.container .questions .choices .answer-card .answer-desc {
+  text-align: left;
+}
+
+.container .questions .choices .answer-card .answer-desc p {
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.container .questions .choices .answer-card:hover {
+  -webkit-box-shadow: 8px 10px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 10px 2px rgba(0, 0, 0, 0.25);
+  opacity: .8;
+  position: relative;
+  bottom: 2px;
+}
+
+.container .questions .choices .answer-card:active {
+  -webkit-box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+}
+
+.container .questions .choices .card-a {
+  background-color: #a076df;
+}
+
+.container .questions .choices .card-b {
+  background-color: #0F26F2;
+}
+
+.container .questions .choices .card-c {
+  background-color: #3AA786;
+}
+
+.container .questions .choices .card-d {
+  background-color: #D6B541;
 }
 
 .modal,

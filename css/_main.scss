@@ -65,3 +65,76 @@
         @extend .w-100;
     }
 }
+
+.questions{
+    height: 80vh;
+    @include flexbox(center, center);
+    flex-direction: column;
+    gap: 56px;
+
+    h1.q{
+        font-weight: 700;
+        color: $white;
+    }
+
+    .choices{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 24px;
+
+        .answer-card{
+            padding: 20px;
+            border-radius: $card-radius;
+            color: $light;
+            border: none;
+            outline: none;
+            @include flexbox(flex-start, flex-start);
+            flex-direction: column;
+            cursor: pointer;
+            transition: all .2s ease;
+
+            .answer-letter{
+                height: 44px;
+                width: 44px;
+                border-radius: $circle-radius;
+                box-shadow: $shadow__low;
+                @include flexbox(center, center);
+                border: 2px solid $light;
+            }
+
+            .answer-desc{
+                text-align: left;
+
+                p{
+                    line-height: 24px;
+                    font-size: 18px;
+                }
+            }
+
+            &:hover{
+                box-shadow: $shadow;
+                opacity: .8;
+                position: relative;
+                bottom: 2px;
+            }
+
+            &:active{
+                box-shadow: $shadow__focus;
+                opacity: 1;
+            }
+        }
+
+        .card-a{
+            background-color: $primary;
+        }
+        .card-b{
+            background-color: $info;
+        }
+        .card-c{
+            background-color: $teal;
+        }
+        .card-d{
+            background-color: $complementary;
+        }
+    }
+}
