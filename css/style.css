@@ -1071,6 +1071,11 @@ button.card:active {
   gap: 16px;
 }
 
+.container .preview-subject .selected-subject .actions .feather {
+  width: 20px;
+  height: 20px;
+}
+
 .container .preview-subject .divider {
   border: 1px solid #3C3072;
 }
