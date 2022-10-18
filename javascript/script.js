@@ -1,7 +1,7 @@
+feather.replace();
+
 $('button').on('click', playButtonSound);
-
 $('a').on('click', playButtonSound);
-
 $('input').on('click', playButtonSound);
 
 function playButtonSound(){
@@ -11,9 +11,6 @@ function playButtonSound(){
 $('#btn-join').on('click', function(){
     $('.modal').css('display', 'flex');
 });
-/**
- * Modal 
- */
 
 $('#btn-close').on('click', function(){
     $('.modal').hide(150);
