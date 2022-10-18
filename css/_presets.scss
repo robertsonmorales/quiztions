@@ -3,7 +3,7 @@
     border-radius: $radius;
     outline: none;
     border: none;
-    font-weight: 600;
+    font-weight: 700;
     width: 100%;
     text-align: center;
     // height: 56px;
@@ -21,6 +21,8 @@
         position: relative;
         top: 2px;
         opacity: 1;
+        background-color: $active;
+        color: $disabled;
     }
 }
 
@@ -32,10 +34,7 @@
     background-color: $primary;
     color: $dark;
 
-    &:active{
-        background-color: $active;
-        color: $disabled;
-    }
+    
 }
 
 .btn-accent{
@@ -63,3 +62,72 @@
 .d-none{
     display: none;
 }
+
+.flex-center{
+    @include flexbox(center, center);
+}
+
+.margin-l-2{
+    margin-left: 8px;
+}
+
+.margin-r-2{
+    margin-right: 8px;
+}
+
+// * Card Group
+.card-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.card{
+    background-color: $secondary;
+    color: $light;
+    padding: 20px;
+    border-radius: $card-radius;
+    box-shadow: $shadow;
+    @include flexbox(center, flex-start);
+    gap: 24px;
+    cursor: pointer;
+    transition: all .2s ease;
+    border: none;
+    outline: none;
+
+    .card-img{
+        img{
+            border-radius: $radius;
+        }
+    }
+
+    .card-body{
+        text-align: left;
+        @include flexbox(flex-start, center);
+        flex-direction: column;
+
+        h3{
+            font-weight: 500;
+        }
+
+        .badge{
+            background-color: $active;
+            @include flexbox(center, center);
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 50px;
+        }
+    }
+
+    &:hover{
+        opacity: .9;
+    }
+
+    &:active{
+        box-shadow: $shadow__focus;
+        position: relative;
+        top: 2px;
+    }
+}
+// * ends here

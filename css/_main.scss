@@ -39,62 +39,29 @@
             }
         }
 
-        .panel{
+        // .panel{
+        // }
+    }
+}
 
-            .card-group{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                column-gap: 24px;
-                row-gap: 24px;
+.preview-subject{
+    @include flexbox(flex-start, flex-start);
+    flex-direction: column;
+    gap: 40px;
 
-                .card{
-                    background-color: $secondary;
-                    color: $light;
-                    padding: 20px;
-                    border-radius: $card-radius;
-                    box-shadow: $shadow;
-                    @include flexbox(center, flex-start);
-                    gap: 24px;
-                    cursor: pointer;
-                    transition: all .2s ease;
-                    border: none;
-                    outline: none;
+    .selected-subject{
+        @include flexbox(flex-start, flex-start);
+        gap: 24px;
 
-                    .card-img{
-                        img{
-                            border-radius: $radius;
-                        }
-                    }
-
-                    .card-body{
-                        text-align: left;
-                        @include flexbox(flex-start, center);
-                        flex-direction: column;
-
-                        h3{
-                            font-weight: 500;
-                        }
-
-                        .badge{
-                            background-color: $active;
-                            @include flexbox(center, center);
-                            gap: 8px;
-                            padding: 8px 12px;
-                            border-radius: 50px;
-                        }
-                    }
-
-                    &:hover{
-                        opacity: .9;
-                    }
-
-                    &:active{
-                        box-shadow: $shadow__focus;
-                        position: relative;
-                        top: 2px;
-                    }
-                }
-            }
+        .actions{
+            @include flexbox(center, center);
+            flex-direction: column;
+            gap: 16px;
         }
+    }
+
+    .divider{
+        border: 1px solid $secondary;
+        @extend .w-100;
     }
 }
