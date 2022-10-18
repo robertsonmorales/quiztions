@@ -44,4 +44,23 @@ nav.navbar{
             }
         }
     }
+
+    .quiz-options{
+        @include flexbox(center, center);
+        gap: 24px;
+
+        .v-divider{
+            border: 1px solid $disabled;
+            height: 25px;
+        }
+
+        button{
+            @include flexbox(center, center);
+
+            .feather{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
 }

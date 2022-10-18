@@ -123,7 +123,9 @@
     &:hover{
         opacity: .9;
     }
+}
 
+button.card{
     &:active{
         box-shadow: $shadow__focus;
         position: relative;
@@ -131,3 +133,8 @@
     }
 }
 // * ends here
+
+.text-muted{
+    color: $disabled;
+    font-weight: 600;
+}
