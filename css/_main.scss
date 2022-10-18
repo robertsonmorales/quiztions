@@ -57,6 +57,11 @@
             @include flexbox(center, center);
             flex-direction: column;
             gap: 16px;
+
+            .feather{
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 

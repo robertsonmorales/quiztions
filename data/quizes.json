@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "img": "../images/subjects/Biology%20-%201st%20Edition.png",
+        "title": "Biology - 1st Edition",
+        "questions": 300
+    },
+    {
+        "id": 1,
+        "img": "../images/subjects/Lehninger%20Principles%20of%20Biochemistry.png",
+        "title": "Lehninger Principles of Biochemistry",
+        "questions": 232
+    },
+    {
+        "id": 1,
+        "img": "../images/subjects/Molecular%20Biology%20of%20the%20Cell.png",
+        "title": "Molecular Biology of the Cell",
+        "questions": 300
+    },
+    {
+        "id": 1,
+        "img": "../images/subjects/Campbell%20Biology%20-%2010th%20Edition.png",
+        "title": "Campbell Biology - 10th Edition",
+        "questions": 300
+    },
+]
