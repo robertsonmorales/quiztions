@@ -468,6 +468,7 @@ body {
   transition: all .2s ease;
   border: none;
   outline: none;
+  text-decoration: none;
 }
 
 .card .card-img img {
@@ -993,16 +994,18 @@ button.card:active {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 40px;
   padding-left: 0;
   border-bottom: 1px solid #BEC4FC;
 }
 
 .container .select-quiz .browse-by-subject .nav .nav-item {
+  text-align: center;
   padding-bottom: 20px;
 }
 
 .container .select-quiz .browse-by-subject .nav .nav-item .nav-link {
+  padding-left: 24px;
+  padding-right: 24px;
   text-decoration: none;
   color: #BEC4FC;
   padding-bottom: 17px;
@@ -1054,23 +1057,6 @@ button.card:active {
   gap: 24px;
 }
 
-.container .preview-subject .selected-subject .actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 16px;
-}
-
 .container .preview-subject .selected-subject .actions .feather {
   width: 20px;
   height: 20px;
@@ -1098,9 +1084,14 @@ button.card:active {
   gap: 56px;
 }
 
-.container .questions h1.q {
+.container .questions .text-center {
+  width: 70%;
+}
+
+.container .questions .text-center h1.q {
   font-weight: 700;
   color: #fff;
+  line-height: 50px;
 }
 
 .container .questions .choices {
@@ -1110,6 +1101,7 @@ button.card:active {
       grid-template-columns: repeat(4, 1fr);
   -webkit-column-gap: 24px;
           column-gap: 24px;
+  width: 100%;
 }
 
 .container .questions .choices .answer-card {
@@ -1121,12 +1113,12 @@ button.card:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1152,10 +1144,6 @@ button.card:active {
       -ms-flex-pack: center;
           justify-content: center;
   border: 2px solid #F4F5FE;
-}
-
-.container .questions .choices .answer-card .answer-desc {
-  text-align: left;
 }
 
 .container .questions .choices .answer-card .answer-desc p {
