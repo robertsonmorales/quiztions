@@ -9,14 +9,17 @@
         .nav{
             list-style: none;
             @include flexbox(center, flex-start);
-            gap: 40px;
+            // gap: 40px;
             padding-left: 0;
             border-bottom: 1px solid $disabled;
 
             .nav-item{
+                text-align: center;
                 padding-bottom: 20px;
 
                 .nav-link{
+                    padding-left: 24px;
+                    padding-right: 24px;
                     text-decoration: none;
                     color: $disabled;
                     padding-bottom: 17px;
@@ -54,9 +57,9 @@
         gap: 24px;
 
         .actions{
-            @include flexbox(center, center);
-            flex-direction: column;
-            gap: 16px;
+            // @include flexbox(center, center);
+            // flex-direction: column;
+            // gap: 16px;
 
             .feather{
                 width: 20px;
@@ -77,15 +80,21 @@
     flex-direction: column;
     gap: 56px;
 
-    h1.q{
-        font-weight: 700;
-        color: $white;
+    .text-center{
+        width: 70%;
+
+        h1.q{
+            font-weight: 700;
+            color: $white;
+            line-height: 50px;
+        }
     }
 
     .choices{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 24px;
+        width: 100%;
 
         .answer-card{
             padding: 20px;
@@ -93,7 +102,7 @@
             color: $light;
             border: none;
             outline: none;
-            @include flexbox(flex-start, flex-start);
+            @include flexbox(center, center);
             flex-direction: column;
             cursor: pointer;
             transition: all .2s ease;
@@ -108,7 +117,7 @@
             }
 
             .answer-desc{
-                text-align: left;
+                // text-align: left;
 
                 p{
                     line-height: 24px;

@@ -1,26 +1,44 @@
 [
     {
         "id": 1,
-        "img": "../images/subjects/Biology%20-%201st%20Edition.png",
+        "subject_id": 1,
+        "img": "../images/subjects/Biology - 1st Edition.png",
         "title": "Biology - 1st Edition",
-        "questions": 300
+        "questions": 100
     },
     {
-        "id": 1,
-        "img": "../images/subjects/Lehninger%20Principles%20of%20Biochemistry.png",
+        "id": 2,
+        "subject_id": 1,
+        "img": "../images/subjects/Lehninger Principles of Biochemistry.png",
         "title": "Lehninger Principles of Biochemistry",
-        "questions": 232
+        "questions": 87
     },
     {
-        "id": 1,
-        "img": "../images/subjects/Molecular%20Biology%20of%20the%20Cell.png",
+        "id": 3,
+        "subject_id": 1,
+        "img": "../images/subjects/Molecular Biology of the Cell.png",
         "title": "Molecular Biology of the Cell",
-        "questions": 300
+        "questions": 46
     },
     {
-        "id": 1,
-        "img": "../images/subjects/Campbell%20Biology%20-%2010th%20Edition.png",
+        "id": 4,
+        "subject_id": 1,
+        "img": "../images/subjects/Campbell Biology - 10th Edition.png",
         "title": "Campbell Biology - 10th Edition",
-        "questions": 300
+        "questions": 89
     },
+    {
+        "id": 5,
+        "subject_id": 5,
+        "img": "https://d2nchlq0f2u6vy.cloudfront.net/cache/7b/bb/7bbb7b74dab853824a15dd4c949d2089.jpg",
+        "title": "Physics: Principles and Problems",
+        "questions": 89
+    },
+    {
+        "id": 6,
+        "subject_id": 5,
+        "img": "https://d2nchlq0f2u6vy.cloudfront.net/cache/23/a4/23a4bfbb6ae23eca2a7d80b69b3dac0b.jpg",
+        "title": "Fundamentals of Physics",
+        "questions": 89
+    }
 ]

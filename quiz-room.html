@@ -28,7 +28,7 @@
     
                         <div class="v-divider"></div>
     
-                        <span class="text-muted">1/15</span>
+                        <div class="text-muted"><span id="current-question"></span>/<span id="total-questions"></span></div>
                     </div>
                 </nav>
             </header>
@@ -36,44 +36,10 @@
             <main>
                 <section class="questions">
                     <div class="text-center">
-                        <h1 class="q">What is Biology?</h1>
+                        <h1 class="q"></h1>
                     </div>
 
-                    <div class="choices">
-                        <button type="button" class="answer-card card-a">
-                            <div class="answer-letter">
-                                <h3>A</h3>
-                            </div>
-                            <div class="answer-desc">
-                                <p>The study of living organisms, divided into many specialized fields that cover their morphology, physiology, anatomy, behavior, origin, and distribution.</p>
-                            </div>
-                        </button>
-                        <button type="button" class="answer-card card-b">
-                            <div class="answer-letter">
-                                <h3>B</h3>
-                            </div>
-                            <div class="answer-desc">
-                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                            </div>
-                        </button>
-                        <button type="button" class="answer-card card-c">
-                            <div class="answer-letter">
-                                <h3>C</h3>
-                            </div>
-                            <div class="answer-desc">
-                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                            </div>
-                        </button>
-                        <button type="button" class="answer-card card-d">
-                            <div class="answer-letter">
-                                <h3>D</h3>
-                            </div>
-                            <div class="answer-desc">
-                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                            </div>
-                        </button>
-                    </div>
-
+                    <div class="choices" id="your-choices"></div>
                 </section>
             </main>
 
@@ -100,6 +66,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="javascript/script.js"></script>  
+    <script src="javascript/quiz-room.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

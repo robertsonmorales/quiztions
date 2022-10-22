@@ -1,0 +1,182 @@
+[
+    {
+        "question": "The smallest of the FORMED elements of the blood are the:",
+        "options": [
+            {
+                "A": "white cells",
+                "B": "red cells",
+                "C": "platelets",
+                "D": "erythrocytes"
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "The condition in which there is a DECREASE in the number of white blood cells in humans is known as:",
+        "options": [
+            {
+                "A": "leukocytosis (pron: lew-kO-sigh-toe-sis)",
+                "B": "leukopenia (pron: lew-kO-pea-nee-ah)",
+                "C": "leukemia (pron: lew-kee-me-ah)",
+                "D": "leukohyperia (pron: lew-kO-high-per-e-ah)"
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Cariology is the study of the:",
+        "options": [
+            {
+                "A": "human heart",
+                "B": "tooth decay",
+                "C": "kidneys",
+                "D": "liver"
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "This major protein component of connective tissue in mammals comprises most of the organic matter of skin, tendons, bones, and teeth, and occurs as fibrous inclusions in most other body structures. Is this material:",
+        "options": [
+            {
+                "A": "elastin",
+                "B": "collagen",
+                "C": "fatty acids",
+                "D": "keratin"
+            }
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a type of neuron?",
+        "options": [
+            {
+                "A": "sensory",
+                "B": "motor",
+                "C": "association",
+                "D": "stimulatory"
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which of the following statements is TRUE of insulin? Is it:",
+        "options": [
+            {
+                "A": "secreted by the pancreas",
+                "B": "a protein",
+                "C": "involved in the metabolism of glucose",
+                "D": "all of the above"
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which of the following tissues secrete hormones?",
+        "options": [
+            {
+                "A": "pancreas",
+                "B": "ovaries",
+                "C": "gastro-intestinal tract",
+                "D": "all of the above"
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "The placenta in humans is derived from the:",
+        "options": [
+            {
+                "A": "embryo only",
+                "B": "uterus only",
+                "C": "endometrium and embryo",
+                "D": "none of the above"
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "A layer of dead skin cells is found in the:",
+        "options": [
+            {
+                "A": "subcutaneous tissue",
+                "B": "dermis",
+                "C": "epidermis",
+                "D": "no dead cells are in the skin"
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Glial (pron: glee-el) cells are found in the:",
+        "options": [
+            {
+                "A": "muscular system",
+                "B": "digestive system",
+                "C": "endocrine system (pron: en-de-kren",
+                "D": "nervous system"
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Phalanges are found in the:",
+        "options": [
+            {
+                "A": "feet",
+                "B": "skull",
+                "C": "hip",
+                "D": "chest"
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which type of muscle is a syncytium (pron: sin-sish-E-um)",
+        "options": [
+            {
+                "A": "skeletal",
+                "B": "cardiac",
+                "C": "smooth",
+                "D": "all of the above"
+            }
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What ions determine the resting potential of a nerve?",
+        "options": [
+            {
+                "A": "sodium and calcium",
+                "B": "calcium and copper",
+                "C": "potassium and calcium",
+                "D": "sodium and potassium"
+            }
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Bacteriophage (pron: back-teer-e-o-faj) are:",
+        "options": [
+            {
+                "A": "bacteria",
+                "B": "bacteria precursors",
+                "C": "viruses",
+                "D": "agents which cause the production of bacteria"
+            }
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Digestion of carbohydrates begins where?",
+        "options": [
+            {
+                "A": "small intestines",
+                "B": "colon",
+                "C": "mouth",
+                "D": "stomach"
+            }
+        ],
+        "answer": "C"
+    }
+]

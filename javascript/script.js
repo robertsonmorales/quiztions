@@ -15,7 +15,3 @@ $('#btn-join').on('click', function(){
 $('#btn-close').on('click', function(){
     $('.modal').hide(150);
 });
-
-$('.card').on('click', function(){
-    window.location.href = 'subject-preview.html';
-});
