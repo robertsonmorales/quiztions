@@ -64,15 +64,14 @@ function chooseAndValidateAnswer(id, answer){
             }
         });
 
-        if(res.length != question_id){
-            getQuizQuestions(question_id++);
-        }else{
-            $('.scoreboard').show(50);
-            $('.total-points').text($('#your-score').text());
-        }
-        // setTimeout(() => {
-            
-        // }, 4000);
+        setTimeout(() => {
+            if(res.length != question_id){
+                getQuizQuestions(question_id++);
+            }else{
+                $('.scoreboard').show(50);
+                $('.total-points').text($('#your-score').text());
+            }
+        }, 4000);
     });
 }
 
