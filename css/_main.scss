@@ -136,7 +136,15 @@
                 box-shadow: $shadow__focus;
                 opacity: 1;
             }
+
+            &:disabled{
+                box-shadow: none;
+                opacity: 1;
+                position: relative;
+                bottom: 0px;
+            }
         }
+        // &[disabled]
 
         .card-a{
             background-color: $primary;
@@ -145,10 +153,18 @@
             background-color: $info;
         }
         .card-c{
-            background-color: $teal;
+            background-color: #2fa1b1;
         }
         .card-d{
             background-color: $complementary;
+        }
+
+        .card-error{
+            background-color: $error !important;
+        }
+        
+        .card-success{
+            background-color: $accent !important;
         }
     }
 }

@@ -15,3 +15,15 @@ $('#btn-join').on('click', function(){
 $('#btn-close').on('click', function(){
     $('.modal').hide(150);
 });
+
+$('.btn-close-board').on('click', function(){
+    window.location.href = '/';
+});
+
+$('.btn-single-player').on('click', function(){
+    window.location.href = "sp.html";
+});
+
+$('.btn-pvp').on('click', function(){
+    window.location.href = "pvp.html";
+});

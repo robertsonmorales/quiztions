@@ -7,7 +7,7 @@ $(document).ready(function(){
         $.each(subj, function(index, value){
             let isActive = (index == id - 1) ? "active" : "";
             content += '<li class="nav-item">\
-                <a class="nav-link ' + isActive + '" href="index.html?subject_id='+value.id+'">'+value.name+'</a>\
+                <a class="nav-link ' + isActive + '" href="sp.html?subject_id='+value.id+'">'+value.name+'</a>\
             </li>';
         });
     

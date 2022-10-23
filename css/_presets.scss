@@ -46,6 +46,10 @@
     width: 100%;
 }
 
+.text-right{
+    text-align: right;
+}
+
 .text-light{
     color: $light;
 }
@@ -73,6 +77,14 @@
 
 .margin-r-2{
     margin-right: 8px;
+}
+
+.margin-b-0{
+    margin-bottom: 0;
+}
+
+.margin-t-2{
+    margin-top: 8px;
 }
 
 // * Card Group

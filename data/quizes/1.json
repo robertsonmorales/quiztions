@@ -1,182 +1,169 @@
 [
     {
+        "id": 1,
         "question": "The smallest of the FORMED elements of the blood are the:",
-        "options": [
-            {
+        "options": {
                 "A": "white cells",
                 "B": "red cells",
                 "C": "platelets",
                 "D": "erythrocytes"
-            }
-        ],
+            },
         "answer": "C"
     },
     {
+        "id": 2,
         "question": "The condition in which there is a DECREASE in the number of white blood cells in humans is known as:",
-        "options": [
-            {
+        "options": {
                 "A": "leukocytosis (pron: lew-kO-sigh-toe-sis)",
                 "B": "leukopenia (pron: lew-kO-pea-nee-ah)",
                 "C": "leukemia (pron: lew-kee-me-ah)",
                 "D": "leukohyperia (pron: lew-kO-high-per-e-ah)"
-            }
-        ],
+            },
         "answer": "B"
     },
     {
+        "id": 3,
         "question": "Cariology is the study of the:",
-        "options": [
-            {
+        "options": {
                 "A": "human heart",
                 "B": "tooth decay",
                 "C": "kidneys",
                 "D": "liver"
-            }
-        ],
+            },
         "answer": "B"
     },
     {
+        "id": 4,
         "question": "This major protein component of connective tissue in mammals comprises most of the organic matter of skin, tendons, bones, and teeth, and occurs as fibrous inclusions in most other body structures. Is this material:",
-        "options": [
-            {
+        "options": {
                 "A": "elastin",
                 "B": "collagen",
                 "C": "fatty acids",
                 "D": "keratin"
-            }
-        ],
+            },
         "answer": "B"
     },
     {
+        "id": 5,
         "question": "Which of the following is NOT a type of neuron?",
-        "options": [
-            {
+        "options": {
                 "A": "sensory",
                 "B": "motor",
                 "C": "association",
                 "D": "stimulatory"
-            }
-        ],
+            },
         "answer": "D"
     },
     {
+        "id": 6,
         "question": "Which of the following statements is TRUE of insulin? Is it:",
-        "options": [
-            {
+        "options": {
                 "A": "secreted by the pancreas",
                 "B": "a protein",
                 "C": "involved in the metabolism of glucose",
                 "D": "all of the above"
-            }
-        ],
+            },
         "answer": "D"
     },
     {
+        "id": 7,
         "question": "Which of the following tissues secrete hormones?",
-        "options": [
-            {
+        "options": {
                 "A": "pancreas",
                 "B": "ovaries",
                 "C": "gastro-intestinal tract",
                 "D": "all of the above"
-            }
-        ],
+            },
         "answer": "D"
     },
     {
+        "id": 8,
         "question": "The placenta in humans is derived from the:",
-        "options": [
-            {
+        "options": {
                 "A": "embryo only",
                 "B": "uterus only",
                 "C": "endometrium and embryo",
                 "D": "none of the above"
-            }
-        ],
+            },
         "answer": "C"
     },
     {
+        "id": 9,
         "question": "A layer of dead skin cells is found in the:",
-        "options": [
-            {
+        "options": {
                 "A": "subcutaneous tissue",
                 "B": "dermis",
                 "C": "epidermis",
                 "D": "no dead cells are in the skin"
-            }
-        ],
+            },
         "answer": "C"
     },
     {
+        "id": 10,
         "question": "Glial (pron: glee-el) cells are found in the:",
-        "options": [
-            {
+        "options": {
                 "A": "muscular system",
                 "B": "digestive system",
                 "C": "endocrine system (pron: en-de-kren",
                 "D": "nervous system"
-            }
-        ],
+            },
         "answer": "D"
     },
     {
+        "id": 11,
         "question": "Phalanges are found in the:",
-        "options": [
-            {
+        "options": {
                 "A": "feet",
                 "B": "skull",
                 "C": "hip",
                 "D": "chest"
-            }
-        ],
+            },
         "answer": "A"
     },
     {
+        "id": 12,
         "question": "Which type of muscle is a syncytium (pron: sin-sish-E-um)",
-        "options": [
-            {
+        "options": {
                 "A": "skeletal",
                 "B": "cardiac",
                 "C": "smooth",
                 "D": "all of the above"
-            }
-        ],
+            },
         "answer": "A"
     },
     {
+        "id": 13,
         "question": "What ions determine the resting potential of a nerve?",
-        "options": [
-            {
+        "options": {
                 "A": "sodium and calcium",
                 "B": "calcium and copper",
                 "C": "potassium and calcium",
                 "D": "sodium and potassium"
-            }
-        ],
+            },
         "answer": "D"
     },
     {
+        "id": 14,
         "question": "Bacteriophage (pron: back-teer-e-o-faj) are:",
-        "options": [
-            {
+        "options": {
                 "A": "bacteria",
                 "B": "bacteria precursors",
                 "C": "viruses",
                 "D": "agents which cause the production of bacteria"
             }
-        ],
+            
+        ,
         "answer": "C"
     },
     {
+        "id": 15,
         "question": "Digestion of carbohydrates begins where?",
-        "options": [
-            {
+        "options": {
                 "A": "small intestines",
                 "B": "colon",
                 "C": "mouth",
                 "D": "stomach"
-            }
-        ],
+            },
         "answer": "C"
     }
 ]
