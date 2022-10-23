@@ -399,6 +399,10 @@ body {
   width: 100%;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-light {
   color: #F4F5FE;
 }
@@ -434,6 +438,14 @@ body {
 
 .margin-r-2 {
   margin-right: 8px;
+}
+
+.margin-b-0 {
+  margin-bottom: 0;
+}
+
+.margin-t-2 {
+  margin-top: 8px;
 }
 
 .card-group {
@@ -1165,6 +1177,14 @@ button.card:active {
   opacity: 1;
 }
 
+.container .questions .choices .answer-card:disabled {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: 1;
+  position: relative;
+  bottom: 0px;
+}
+
 .container .questions .choices .card-a {
   background-color: #a076df;
 }
@@ -1174,15 +1194,24 @@ button.card:active {
 }
 
 .container .questions .choices .card-c {
-  background-color: #3AA786;
+  background-color: #2fa1b1;
 }
 
 .container .questions .choices .card-d {
   background-color: #D6B541;
 }
 
+.container .questions .choices .card-error {
+  background-color: #DB222D !important;
+}
+
+.container .questions .choices .card-success {
+  background-color: #34D49D !important;
+}
+
 .modal,
-.screen-loader {
+.screen-loader,
+.scoreboard {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
@@ -1200,7 +1229,8 @@ button.card:active {
 }
 
 .modal .modal-wrapper,
-.screen-loader .modal-wrapper {
+.screen-loader .modal-wrapper,
+.scoreboard .modal-wrapper {
   background-color: #3C3072;
   padding: 32px;
   -webkit-box-shadow: 8px 10px 2px rgba(0, 0, 0, 0.25);
@@ -1224,7 +1254,8 @@ button.card:active {
 }
 
 .modal .modal-wrapper .btn-close,
-.screen-loader .modal-wrapper .btn-close {
+.screen-loader .modal-wrapper .btn-close,
+.scoreboard .modal-wrapper .btn-close {
   background-color: transparent;
   color: #BEC4FC;
   -webkit-box-shadow: none;
@@ -1236,24 +1267,28 @@ button.card:active {
 }
 
 .modal .modal-wrapper .btn-close .feather,
-.screen-loader .modal-wrapper .btn-close .feather {
+.screen-loader .modal-wrapper .btn-close .feather,
+.scoreboard .modal-wrapper .btn-close .feather {
   width: 18px;
   height: 18px;
 }
 
 .modal .modal-wrapper .btn-close:active,
-.screen-loader .modal-wrapper .btn-close:active {
+.screen-loader .modal-wrapper .btn-close:active,
+.scoreboard .modal-wrapper .btn-close:active {
   color: #19123E;
 }
 
 .modal .modal-wrapper h2,
-.screen-loader .modal-wrapper h2 {
+.screen-loader .modal-wrapper h2,
+.scoreboard .modal-wrapper h2 {
   margin: 0;
   margin-bottom: 16px;
 }
 
 .modal .modal-wrapper .join-wrapper,
-.screen-loader .modal-wrapper .join-wrapper {
+.screen-loader .modal-wrapper .join-wrapper,
+.scoreboard .modal-wrapper .join-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1267,7 +1302,8 @@ button.card:active {
 }
 
 .modal .modal-wrapper .invalid-feedback,
-.screen-loader .modal-wrapper .invalid-feedback {
+.screen-loader .modal-wrapper .invalid-feedback,
+.scoreboard .modal-wrapper .invalid-feedback {
   display: none;
   background-color: #DB222D;
   color: #F4F5FE;
@@ -1282,6 +1318,8 @@ button.card:active {
 }
 
 .screen-loader .loader-content {
+  width: 100%;
+  height: 100vh;
   position: relative;
 }
 
@@ -1296,6 +1334,47 @@ button.card:active {
           animation-direction: alternate;
   -webkit-animation-play-state: running;
           animation-play-state: running;
+}
+
+.scoreboard-content {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scoreboard-content .board {
+  background-color: #3C3072;
+  width: 35%;
+  padding: 32px;
+  -webkit-box-shadow: 8px 10px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 10px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scoreboard-content .board ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 @-webkit-keyframes bounce {

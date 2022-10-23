@@ -1,5 +1,6 @@
 .modal, 
-.screen-loader{
+.screen-loader,
+.scoreboard{
     width: 100%;
     height: 100vh;
     background-color: rgba(0,0,0,0.8);
@@ -62,6 +63,8 @@
     background-color: rgba(0,0,0,0.8);
 
     .loader-content{
+        width: 100%;
+        height: 100vh;
         position: relative;
 
         img{
@@ -70,6 +73,27 @@
             animation-iteration-count: infinite;
             animation-direction: alternate;
             animation-play-state: running;
+        }
+    }
+}
+
+.scoreboard-content{
+    width: 100%;
+    height: 100vh;
+    @include flexbox(center, center);
+
+    .board{
+        background-color: $secondary;
+        width: 35%;
+        padding: 32px;
+        box-shadow: $shadow;
+        border-radius: $card-radius;
+        @include flexbox(center, center);
+        flex-direction: column;
+
+        ul{
+            list-style: none;
+            padding-left: 0;
         }
     }
 }

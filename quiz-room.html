@@ -30,6 +30,10 @@
     
                         <div class="text-muted"><span id="current-question"></span>/<span id="total-questions"></span></div>
                     </div>
+
+                    <div class="score">
+                        <p class="text-muted">Your point: <span id="your-score">0</span></p>
+                    </div>
                 </nav>
             </header>
 
@@ -42,24 +46,40 @@
                     <div class="choices" id="your-choices"></div>
                 </section>
             </main>
+        </div>
 
-            <div class="sounds d-none">
-                <audio  loop>
-                    <source src="sounds/Komiku_-_08_-_Mall.mp3" type="audio/mp3">
-                    Your browser does not support the audio tag.
-                </audio>
-        
-                <audio id="btn-click">
-                    <source src="sounds/button.mp3" type="audio/mp3">
-                </audio>
-            </div>
+        <div class="sounds d-none">
+            <audio autoplay loop>
+                <source src="sounds/Komiku_-_08_-_Mall.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+    
+            <audio id="btn-click">
+                <source src="sounds/button.mp3" type="audio/mp3">
+            </audio>
+
+            <audio id="answer"></audio>
         </div>
 
         <div class="screen-loader">
-            <div class="loader-content">
+            <div class="loader-content flex-center">
                 <img src="images/logo.png" 
                     alt="Logo brand"
                     width="200">
+            </div>
+        </div>
+
+        <div class="scoreboard">
+            <div class="scoreboard-content">
+                <div class="board">
+                    <img src="images/welcome.svg" alt="You're done" width="120">
+                    <h1 class="total-points margin-b-0"></h1>
+                    <p class="margin-t-2">Your points</p>
+                    <br>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-primary btn-close-board">Exit Quiz</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

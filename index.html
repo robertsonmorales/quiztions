@@ -15,93 +15,66 @@
 </head>
 <body>
     <div id="app">
-        <div class="container">
-            <header>
-                <nav class="navbar">
-                    <div class="logo-brand">
-                        <img src="images/logo.png" alt="Logo brand" width="200">
-                    </div>
-                    <div class="user-options">
-                        <button type="button" class="btn btn-sm btn-primary" id="btn-join">Join</button>
-                        <div class="user-settings">
-                            <button type="button" class="btn-settings">
-                                <em data-feather="settings"></em>
-                            </button>
-                            <button type="button" class="btn-profile">
-                                <img src="images/profile.png" 
-                                    alt="Profile" 
-                                    width="55" 
-                                    height="55">
-                            </button>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-
-            <main>
-                <section class="select-quiz" id="start-a-quiz">
-                    <div class="mode-wrapper">
-                        <h1 class="title">Start a <span class="highlight">Quiz</span></h1>
-                        <p class="desc">Customize your QuizTions gameplay with friends</p>
-                    </div>
-
-                    <div class="input-group">
-                        <em data-feather="search"></em>
-                        <input type="text" name="search" class="form-control" placeholder="Try this “Mathematics”, “English”..." autocomplete="off">
-                    </div>
-
-                    <div class="browse-by-subject w-100">
-                        <div class="subjects w-100">
-                            <h3>Browse by Subject</h3>
-
-                            <ul class="nav nav-tabs" id="subjects"></ul>
-
-                            <div class="panel active" data-subject="">
-                                <div class="card-group" id="quizes"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-            <div class="sounds d-none">
-                <audio autoplay loop>
-                    <source src="sounds/Komiku_-_08_-_Mall.mp3" type="audio/mp3">
-                    Your browser does not support the audio tag.
-                </audio>
-        
-                <audio id="btn-click">
-                    <source src="sounds/button.mp3" type="audio/mp3">
-                </audio>
-            </div>
+        <div class="sounds d-none">
+            <audio autoplay loop>
+                <source src="sounds/Komiku_-_08_-_Mall.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+    
+            <audio id="btn-click">
+                <source src="sounds/button.mp3" type="audio/mp3">
+            </audio>
         </div>
 
-        <div class="modal">
-            <div class="modal-wrapper">
-                <button class="btn btn-sm btn-close" id="btn-close">
-                    <em data-feather="x"></em>
-                </button>
-                <h2>Join with Friends</h2>
+        <form class="login-form" 
+            id="login" 
+            method="GET" 
+            action="choose-mode.html">
 
-                <div class="join-wrapper">
-                    <div class="input-group">
-                        <input type="text" name="code" class="form-control no-icon" placeholder="Enter a join code..." maxlength="6" autocomplete="off">
-                    </div>
-                    <div class="join-action">
-                        <button type="button" class="btn btn-primary">Join</button>
-                    </div>
-                </div>
-
-                <div class="invalid-feedback">
-                    <span>Please enter a valid game code</span>
-                </div>
+            <div class="logo-brand">
+                <img src="images/logo-chat.png" 
+                    alt="Logo" 
+                    width="200">
             </div>
-        </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <em data-feather="user"></em>
+                    <input type="text" 
+                        name="username" 
+                        class="form-control" 
+                        placeholder="Username..." 
+                        autocomplete="off">
+                </div>
+                <!-- <div class="input-group">
+                    <em data-feather="lock"></em>
+                    <input type="password" 
+                        name="password" 
+                        class="form-control" 
+                        placeholder="Password..." 
+                        autocomplete="off">
+                </div> -->
+            </div>
+            <div class="form-actions">
+                <button type="submit" 
+                    class="btn btn-accent" 
+                    id="btn-login">Play!</button>
+
+                <!-- <div class="or-divider">
+                    <span>or</span>
+                </div>
+
+                <button type="button" 
+                    class="btn btn-primary" 
+                    id="btn-register">Register</button> -->
+            </div>
+        </form>
+
+        <div id="elements"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="javascript/index.js"></script>
     <script src="javascript/script.js"></script>  
 </body>
 </html>
