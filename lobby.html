@@ -16,8 +16,13 @@
 <body>
     <div id="app">
         
-        <div class="group">
+        <div class="group flex-center flex-column">
+            <h3>Waiting...</h3>
 
+            <img src="images/AvatarMaker.svg" 
+                alt="Avatar" 
+                width="300"
+                class="rounded-circle">
         </div>
 
         <div id="elements"></div>
@@ -37,5 +42,22 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="javascript/script.js"></script>
+    <script src="https://js.pusher.com/7.2/pusher.min.js"></script>
+    <script>
+
+        // Enable pusher logging - don't include this in production
+        Pusher.logToConsole = true;
+
+        var pusher = new Pusher('2d6fac42923bea7bc164', {
+        cluster: 'ap1'
+        });
+
+        var channel = pusher.subscribe('quiztions');
+        channel.bind('join-user', function(data) {
+            if(data.start === true){
+                window.location.href = data.invited;
+            }
+        });
+    </script>
 </body>
 </html>

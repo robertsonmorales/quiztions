@@ -71,6 +71,14 @@
     @include flexbox(center, center);
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
+.rounded-circle{
+    border-radius: 50%;
+}
+
 .margin-l-2{
     margin-left: 8px;
 }
@@ -160,4 +168,8 @@ button.card{
     span{
         color: $error;
     }
+}
+
+.hidden{
+    visibility: hidden;
 }
