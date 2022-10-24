@@ -34,7 +34,11 @@ $.get("data/quizes.json", (res) => {
     let co = newCode == "" ? "" : "&code=" + newCode;
     let params2 = 'mode=' + mode + co + '&id='+matchRecord.id;
 
-    $('#btn-start').data('data-url', 'quiz-room.html?'+params2);
+    if(mode == "pvp"){
+        $('#btn-start').data('data-url', 'php/start.php?'+params2);
+    }else{ // * single player
+        $('#btn-start').data('data-url', 'quiz-room.html?'+params2);
+    }
 });
 
 $('#btn-start').on('click', function(){

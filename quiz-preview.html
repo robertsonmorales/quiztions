@@ -61,7 +61,9 @@
                         </div>
                         
                         <div class="actions">
-                            <button class="btn btn-accent flex-center" id="btn-start" data-url="">
+                            <button class="btn btn-accent flex-center" 
+                                id="btn-start" 
+                                data-url="">
                                 <em data-feather="play"></em>
                                 <span class="margin-l-2">Start Now</span>
                             </button>
@@ -199,7 +201,7 @@
         Pusher.logToConsole = true;
 
         var pusher = new Pusher('2d6fac42923bea7bc164', {
-        cluster: 'ap1'
+            cluster: 'ap1'
         });
 
         var channel = pusher.subscribe('quiztions');
@@ -211,15 +213,6 @@
 
                 $('#list-of-users').append(content);
         });
-        // $.each(arr, (index, value) => {
-        //     if(arr.length < 0){
-        //         $('.joined-users').addClass('d-none');
-        //     }else{
-        //         $('.joined-users').removeClass('d-none');
-
-                
-        //     }
-        // }); 
     </script>
 </body>
 </html>

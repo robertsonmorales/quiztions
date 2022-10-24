@@ -432,6 +432,17 @@ body {
           justify-content: center;
 }
 
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
 .margin-l-2 {
   margin-left: 8px;
 }
@@ -546,6 +557,10 @@ button.card:active {
 
 .invalid-feedback span {
   color: #DB222D;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 #app {

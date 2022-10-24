@@ -2,6 +2,14 @@ var id = window.location.search.split("=").reverse()[0];
 
 var loc = window.location.search.split("&");
 var mode = loc[0].split("=").reverse()[0]; // * pvp or sp
+var isInvited = null;
+
+if(loc[2].split("=")[0] == "invited"){
+    isInvited = loc[2].split("=").reverse()[0]; // * invited
+}else{
+    isInvited = false;
+}
+
 var newCode = "";
 if(loc[1] != undefined){
     if(loc[1].split("=").reverse()[1] == "code"){
@@ -157,7 +165,11 @@ $('.btn-back').on('click', function(){
 });
 
 $('.btn-close-board').on('click', function(){
-    window.location.href = 'selection.html?mode='+mode;
+    if(mode == "pvp" && isInvited == true){
+        window.location.href = "index.html";
+    }else{
+        window.location.href = 'selection.html?mode='+mode;
+    }
 });
 
 getQuizQuestions(0);
