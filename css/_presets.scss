@@ -83,6 +83,10 @@
     margin-bottom: 0;
 }
 
+.margin-b-lg{
+    margin-bottom: 40px;
+}
+
 .margin-t-2{
     margin-top: 8px;
 }
@@ -150,4 +154,10 @@ button.card{
 .text-muted{
     color: $disabled;
     font-weight: 600;
+}
+
+.invalid-feedback{
+    span{
+        color: $error;
+    }
 }

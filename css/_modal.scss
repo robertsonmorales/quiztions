@@ -91,9 +91,8 @@
         @include flexbox(center, center);
         flex-direction: column;
 
-        ul{
-            list-style: none;
-            padding-left: 0;
+        .flex-center{
+            gap: 16px;
         }
     }
 }

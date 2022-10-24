@@ -1,13 +1,27 @@
 $(document).ready(function(){
     $.get("data/subjects.json", (res) => {
+        let loc = window.location.search.split("&");
+        let mode = loc[0].split("=").reverse()[0]; // * pvp or sp
+        let newCode = "";
+        if(loc[1] != undefined){
+            if(loc[1].split("=").reverse()[1] == "code"){
+                newCode = loc[1].split("=").reverse()[0]; // * get code
+            }
+        }else{
+            newCode = "";
+        }
+
         let id = window.location.search.split("=").reverse()[0];
         let content = '';
         let subj = res;
     
         $.each(subj, function(index, value){
             let isActive = (index == id - 1) ? "active" : "";
+            let c = newCode == "" ? "" : "&code=" + newCode;
+            let params = 'mode=' + mode + c + '&subject_id='+value.id;
+
             content += '<li class="nav-item">\
-                <a class="nav-link ' + isActive + '" href="sp.html?subject_id='+value.id+'">'+value.name+'</a>\
+                <a class="nav-link ' + isActive + '" href="selection.html?'+params+'">'+value.name+'</a>\
             </li>';
         });
     
@@ -21,7 +35,10 @@ $(document).ready(function(){
             $.each(quizes, function(index, value){
                 if(value.subject_id == id){
                     quizNull.push(0);
-                    content1 += '<a href="quiz-preview.html?id='+value.id+'" class="card">\
+                    let co = newCode == "" ? "" : "&code=" + newCode;
+                    let params2 = 'mode=' + mode + co + '&id='+value.id;
+
+                    content1 += '<a href="quiz-preview.html?'+params2+'" class="card">\
                         <div class="card-img">\
                             <img src="'+value.img+'" \
                                 alt="'+value.title+'"\
