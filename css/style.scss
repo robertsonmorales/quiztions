@@ -112,6 +112,7 @@ body{
     flex-direction: column;
     gap: 24px;
     flex: .27;
+    z-index: 1;
 
     .logo-brand{
         flex: none;

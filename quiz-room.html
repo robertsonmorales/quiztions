@@ -19,11 +19,14 @@
             <header>
                 <nav class="navbar">
                     <div class="quiz-options">
-                        <button type="button" class="btn btn-sm btn-primary">
-                            <em data-feather="settings"></em>
+                        <button type="button" 
+                            title="Leave the room"
+                            class="btn btn-sm btn-primary btn-back">
+                            <em data-feather="chevron-left"></em>
                         </button>
-                        <button type="button" class="btn btn-sm btn-primary">
-                            <em data-feather="music"></em>
+                        <button type="button" class="btn btn-sm btn-primary btn-sound">
+                            <em data-feather="music" id="on"></em>
+                            <em data-feather="volume-x" id="off" class="d-none"></em>
                         </button>
     
                         <div class="v-divider"></div>
@@ -49,7 +52,7 @@
         </div>
 
         <div class="sounds d-none">
-            <audio autoplay loop>
+            <audio autoplay loop id="background-track">
                 <source src="sounds/Komiku_-_08_-_Mall.mp3" type="audio/mp3">
                 Your browser does not support the audio tag.
             </audio>
@@ -74,10 +77,11 @@
                 <div class="board">
                     <img src="images/welcome.svg" alt="You're done" width="120">
                     <h1 class="total-points margin-b-0"></h1>
-                    <p class="margin-t-2">Your points</p>
-                    <br>
-                    <div class="text-right">
-                        <button type="button" class="btn btn-primary btn-close-board">Exit Quiz</button>
+                    <p class="margin-t-2 margin-b-lg">Your points</p>
+                    
+                    <div class="w-100 flex-center">
+                        <button type="button" class="btn btn-accent btn-play-again">Play again</button>
+                        <button type="button" class="btn btn-primary btn-close-board">Exit</button>
                     </div>
                 </div>
             </div>

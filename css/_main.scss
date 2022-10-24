@@ -57,9 +57,9 @@
         gap: 24px;
 
         .actions{
-            // @include flexbox(center, center);
-            // flex-direction: column;
-            // gap: 16px;
+            @include flexbox(center, center);
+            flex-direction: column;
+            gap: 16px;
 
             .feather{
                 width: 20px;
@@ -71,6 +71,25 @@
     .divider{
         border: 1px solid $secondary;
         @extend .w-100;
+    }
+}
+
+.joined-users{
+    ul{
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        gap: 40px;
+
+        li{
+            flex-direction: column;
+
+            img{
+                border-radius: 50%;
+                border: 3px solid $primary;
+                margin-bottom: 8px;
+            }
+        }
     }
 }
 

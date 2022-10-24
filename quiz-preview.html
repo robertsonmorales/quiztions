@@ -22,13 +22,13 @@
                         <img src="images/logo.png" alt="Logo brand" width="200">
                     </div>
                     <div class="user-options">
-                        <button type="button" class="btn btn-sm btn-primary" id="btn-join">Join</button>
+                        <!-- <button type="button" class="btn btn-sm btn-primary" id="btn-join">Join</button> -->
                         <div class="user-settings">
                             <button type="button" class="btn-settings">
                                 <em data-feather="settings"></em>
                             </button>
                             <button type="button" class="btn-profile">
-                                <img src="images/profile.png" 
+                                <img src="images/avatar.svg" 
                                     alt="Profile" 
                                     width="55" 
                                     height="55">
@@ -48,7 +48,7 @@
                                     width="100">
                             </div>
                             <div class="card-body">
-                                <h3 class="title">Campbell Biology - 10th Edition</h3>
+                                <h3 class="title"></h3>
 
                                 <div class="badge">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,20 +61,26 @@
                         </div>
                         
                         <div class="actions">
-                            <a href="" class="btn btn-accent flex-center" id="btn-start">
+                            <button class="btn btn-accent flex-center" id="btn-start" data-url="">
                                 <em data-feather="play"></em>
                                 <span class="margin-l-2">Start Now</span>
-                            </a>
-                            <!-- <button type="button" class="btn btn-primary flex-center">
-                                <em data-feather="users"></em>
-                                <span class="margin-l-2">Play with Friends</span>
-                            </button> -->
+                            </button>
+
+                            <button type="button" class="btn btn-primary flex-center" id="btn-join-code">
+                                <em data-feather="copy"></em>
+                                <span class="margin-l-2">Copy Join Code</span>
+                            </button>
                         </div>
                     </div>
 
                     <div class="divider"></div>
 
-                    <div class="recent-quizes">
+                    <div class="joined-users">
+                        <h3>Users who joined</h3>
+
+                        <ul id="list-of-users"></ul>
+                    </div>
+                    <!-- <div class="recent-quizes">
                         <h3>Recent Quizes</h3>
                         <div class="card-group">
                             <button type="button" class="card">
@@ -134,20 +140,20 @@
                                 </div>
                             </button>
                         </div>
-                    </div>
+                    </div> -->
                 </section>
             </main>
+        </div>
 
-            <div class="sounds d-none">
-                <audio autoplay loop>
-                    <source src="sounds/Komiku_-_08_-_Mall.mp3" type="audio/mp3">
-                    Your browser does not support the audio tag.
-                </audio>
-        
-                <audio id="btn-click">
-                    <source src="sounds/button.mp3" type="audio/mp3">
-                </audio>
-            </div>
+        <div class="sounds d-none">
+            <audio autoplay loop>
+                <source src="sounds/Komiku_-_08_-_Mall.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+    
+            <audio id="btn-click">
+                <source src="sounds/button.mp3" type="audio/mp3">
+            </audio>
         </div>
 
         <div class="modal">
@@ -179,12 +185,41 @@
                     width="200">
             </div>
         </div>
-
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="javascript/quiz-preview.js"></script>  
-    <script src="javascript/script.js"></script>  
+    <script src="javascript/script.js"></script> 
+    
+    <script src="https://js.pusher.com/7.2/pusher.min.js"></script>
+    <script>
+
+        // Enable pusher logging - don't include this in production
+        Pusher.logToConsole = true;
+
+        var pusher = new Pusher('2d6fac42923bea7bc164', {
+        cluster: 'ap1'
+        });
+
+        var channel = pusher.subscribe('quiztions');
+        channel.bind('join-user', function(data) {
+            let content = '<li class="flex-center">\
+                    <img src="images/AvatarMaker.svg" alt="Avatar" width="100">\
+                    <span id="name">'+data.username+'</span>\
+                </li>';
+
+                $('#list-of-users').append(content);
+        });
+        // $.each(arr, (index, value) => {
+        //     if(arr.length < 0){
+        //         $('.joined-users').addClass('d-none');
+        //     }else{
+        //         $('.joined-users').removeClass('d-none');
+
+                
+        //     }
+        // }); 
+    </script>
 </body>
 </html>

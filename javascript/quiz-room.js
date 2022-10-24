@@ -1,6 +1,19 @@
-function getQuizQuestions(qid){
-    var id = window.location.search.split("=").reverse()[0];
+var id = window.location.search.split("=").reverse()[0];
 
+var loc = window.location.search.split("&");
+var mode = loc[0].split("=").reverse()[0]; // * pvp or sp
+var newCode = "";
+if(loc[1] != undefined){
+    if(loc[1].split("=").reverse()[1] == "code"){
+        newCode = loc[1].split("=").reverse()[0]; // * get code
+    }
+}else{
+    newCode = "";
+}
+var co = newCode == "" ? "" : "&code=" + newCode;
+var params = 'mode=' + mode + co + '&id='+id;
+
+function getQuizQuestions(qid){
     $.get('data/quizes/'+id+'.json', (res) => {
         let question = res[qid]; // shuffle(res)[index];
         let content = "";
@@ -64,14 +77,15 @@ function chooseAndValidateAnswer(id, answer){
             }
         });
 
-        setTimeout(() => {
+        
+        // setTimeout(() => {
             if(res.length != question_id){
                 getQuizQuestions(question_id++);
             }else{
                 $('.scoreboard').show(50);
                 $('.total-points').text($('#your-score').text());
             }
-        }, 4000);
+        // }, 4000);
     });
 }
 
@@ -121,5 +135,29 @@ function playSoundOfAnswer(isTrue){
         $('#answer').attr("src", "sounds/mistake.mp3")[0].play();
     }
 }
+
+$('.btn-sound').on('click', function(){
+    if($('#on').hasClass('d-none')){
+        $('#off').addClass('d-none');
+        $('#on').removeClass('d-none');
+        $('#background-track')[0].play();
+    }else{
+        $('#on').addClass('d-none');
+        $('#off').removeClass('d-none');
+        $('#background-track')[0].pause();
+    }    
+});
+
+$('.btn-play-again').on('click', function(){
+    window.location.href = 'quiz-room.html?'+params;
+});
+
+$('.btn-back').on('click', function(){
+    window.location.href = 'quiz-preview.html?'+params;
+});
+
+$('.btn-close-board').on('click', function(){
+    window.location.href = 'selection.html?mode='+mode;
+});
 
 getQuizQuestions(0);

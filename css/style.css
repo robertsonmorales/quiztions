@@ -444,6 +444,10 @@ body {
   margin-bottom: 0;
 }
 
+.margin-b-lg {
+  margin-bottom: 40px;
+}
+
 .margin-t-2 {
   margin-top: 8px;
 }
@@ -538,6 +542,10 @@ button.card:active {
 .text-muted {
   color: #BEC4FC;
   font-weight: 600;
+}
+
+.invalid-feedback span {
+  color: #DB222D;
 }
 
 #app {
@@ -693,6 +701,7 @@ button.card:active {
   -webkit-box-flex: .27;
       -ms-flex: .27;
           flex: .27;
+  z-index: 1;
 }
 
 .login-form .logo-brand {
@@ -1069,6 +1078,23 @@ button.card:active {
   gap: 24px;
 }
 
+.container .preview-subject .selected-subject .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
 .container .preview-subject .selected-subject .actions .feather {
   width: 20px;
   height: 20px;
@@ -1076,6 +1102,28 @@ button.card:active {
 
 .container .preview-subject .divider {
   border: 1px solid #3C3072;
+}
+
+.container .joined-users ul {
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+
+.container .joined-users ul li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .joined-users ul li img {
+  border-radius: 50%;
+  border: 3px solid #a076df;
+  margin-bottom: 8px;
 }
 
 .container .questions {
@@ -1372,9 +1420,8 @@ button.card:active {
           flex-direction: column;
 }
 
-.scoreboard-content .board ul {
-  list-style: none;
-  padding-left: 0;
+.scoreboard-content .board .flex-center {
+  gap: 16px;
 }
 
 @-webkit-keyframes bounce {
